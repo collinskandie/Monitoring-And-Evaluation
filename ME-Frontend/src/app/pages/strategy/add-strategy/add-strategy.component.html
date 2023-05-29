@@ -1,0 +1,17 @@
+<nb-card>
+  <nb-card-body>
+    <form nbForm (ngSubmit)="onSubmit()" [formGroup]="userForm">
+      <div class="form-group">
+        <input type="hidden" name="createdBy" [value]="userName">
+        <input type="hidden" name="createdById" [value]="userId">
+        <label class="exampleInputEmail1">Strategy Name:</label>
+        <input nbInput fullWidth type="text" formControlName="name" />
+      </div>
+      <div class="form-group">
+        <label class="exampleInputEmail1">Strategy Description:</label>
+        <input nbInput fullWidth type="text" formControlName="description" />
+      </div>
+      <button type="submit">Add Strategy</button>
+    </form>
+  </nb-card-body>
+</nb-card>

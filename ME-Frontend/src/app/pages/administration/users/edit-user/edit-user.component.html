@@ -1,0 +1,33 @@
+<form nbForm (ngSubmit)="updateUser()" [formGroup]="userForm" *ngIf="user">
+    <nb-card>
+      <nb-card-header>Edit User</nb-card-header>
+      <nb-card-body>
+        <div class="form-group">
+          <input nbInput fullWidth type="text"  [(ngModel)]="user._id" formControlName="id"/>
+        </div>
+        <div class="form-group">
+          <label class="exampleInputEmail1">Full Name</label>
+          <input nbInput fullWidth type="text"  [(ngModel)]="user.userName" formControlName="name" />
+        </div>
+        <div class="form-group">
+          <label class="exampleInputEmail1">Email</label>
+          <input nbInput fullWidth type="email"  [(ngModel)]="user.email" formControlName="email" />
+        </div>
+        <div class="form-group">
+          <label class="exampleInputEmail1">Phone</label>
+          <input nbInput fullWidth type="number"  [(ngModel)]="user.phone" formControlName="phone" />
+        </div>
+        <label class="exampleInputEmail1">User Role</label>
+        <select nbSelect fullWidth formControlName="role">
+          <br>          
+          <option value="ADMIN">Admin</option>
+          <option value="CHAMPION">Champion</option>
+        </select>
+      </nb-card-body>
+      <nb-card-footer>
+        <button nbButton status="success" type="submit" [disabled]="userForm.invalid">
+        Submit
+        </button>
+      </nb-card-footer>
+    </nb-card>
+  </form>

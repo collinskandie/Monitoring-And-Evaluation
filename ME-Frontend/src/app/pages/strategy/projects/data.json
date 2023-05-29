@@ -1,0 +1,146 @@
+[
+  {
+    "data": {
+      "name": "Reduce Road fatalities",
+      "size": "1.8 MB",
+      "items": 5,
+      "kind": "strategy",
+      "createdBy": "Admin"
+    },
+    "children": [
+      {
+        "data": {
+          "name": "Develop/ Review Traffic Act and related Policy/ Legislation",
+          "kind": "project",
+          "size": "240 KB",
+          "createdBy": "Jackson Omollo"
+        },
+        "children": [
+          {
+            "data": {
+              "name": "Overhaul Traffic Act, Cap. 403.",
+              "kind": "activity",
+              "size": "200 KB",
+              "createdBy": "Jackson Omollo"
+            }
+          },
+          {
+            "data": {
+              "name": "Finalize Highway Code, School Transport Regulations, and Motor Vehicle Inspection Regulations.",
+              "kind": "activity",
+              "size": "266 KB",
+              "createdBy": "Jackson Omollo"
+            }
+          },
+          {
+            "data": {
+              "name": "Review NTSA Operations of PSV.",
+              "kind": "activity",
+              "size": "0",
+              "createdBy": "Jackson Omollo"
+            }
+          }
+        ]
+      },
+      {
+        "data": {
+          "name": "Improve on Operations ",
+          "kind": "project",
+          "size": "466 KB",
+          "items": 3,
+          "createdBy": "Jackson Omollo"
+        },
+        "children": [
+          {
+            "data": {
+              "name": "Reduce service downtimes on TIMs and MVI Services",
+              "kind": "activity",
+              "size": "240mb",
+              "createdBy": "Jackson Omollo"
+            }
+          },
+          {
+            "data": {
+              "name": "Strengthen Registration Services by reducing waiting time and pending requests.",
+              "kind": "activity",
+              "size": "240mb",
+              "createdBy": "Timothy T`challa"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "name": "Realize 100% operational efficiency ",
+      "size": "1.8 MB",
+      "items": 5,
+      "kind": "strategy",
+      "createdBy": "Admin"
+    },
+    "children": [
+      {
+        "data": {
+          "name": "Leverage on Technology/Automation",
+          "kind": "project",
+          "size": "240 KB",
+          "createdBy": "Jackson Omollo"
+        },
+        "children": [
+          {
+            "data": {
+              "name": "Review/ensure compliance with ICT policy and standard",
+              "kind": "activity",
+              "size": "200 KB",
+              "createdBy": "Jackson Omollo"
+            }
+          },
+          {
+            "data": {
+              "name": "Enterprise Resource Planning for HR, finance and procurement",
+              "kind": "activity",
+              "size": "266 KB",
+              "createdBy": "Jackson Omollo"
+            }
+          },
+          {
+            "data": {
+              "name": "Initiate use of Simulators in driver testing process",
+              "kind": "activity",
+              "size": "0",
+              "createdBy": "Jackson Omollo"
+            }
+          }
+        ]
+      },
+      {
+        "data": {
+          "name": "Advance Customer Experience/Care: ",
+          "kind": "project",
+          "size": "466 KB",
+          "items": 3,
+          "createdBy": "Jackson Omollo"
+        },
+        "children": [
+          {
+            "data": {
+              "name": "Manage customer relations",
+              "kind": "activity",
+              "size": "240mb",
+              "createdBy": "Jackson Omollo"
+            }
+          },
+          {
+            "data": {
+              "name": "Strengthen Registration Services by reducing waiting time and pending requests.",
+              "kind": "activity",
+              "size": "240mb",
+              "createdBy": "Jackson Omollo"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

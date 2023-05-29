@@ -1,0 +1,36 @@
+
+nb-card {
+  max-width: 700px;
+  margin: auto;
+  max-height: 100%;
+
+  nb-card-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  nb-card-body {
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+    }
+    button[type='submit']:hover {
+      background-color: #2c20db;
+    }
+
+    button[type='submit'][disabled] {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+}

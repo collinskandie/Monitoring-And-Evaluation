@@ -1,0 +1,51 @@
+<nb-card>
+  <nb-card-header></nb-card-header>
+  <nb-card-body>
+    <div *ngIf="!showEditForm">
+      <div class="row" *ngIf="!showForm">
+        <button (click)="showAddUserForm()" nbButton status="primary">
+          + Add User
+        </button>
+        <div class="col-sm-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users">
+                <td>{{ user.userName }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.role }}</td>
+                <td>
+                  <button
+                    nbButton
+                    status="primary"
+                    (click)="showEditUserForm(user)"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    nbButton
+                    status="danger"
+                    (click)="deleteUser(user._id)"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+  <app-add-user *ngIf="showForm"></app-add-user>
+  <ngx-edit-user *ngIf="showEditForm" [user]="selectedUser"></ngx-edit-user>
+</nb-card>

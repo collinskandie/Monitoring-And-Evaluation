@@ -1,0 +1,67 @@
+<div class="row">
+<div class="col-sm-8">
+<nb-card>
+  <nb-card-header>Project Details</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="project_name" class="label">Project Name</label>
+          <input
+            type="text"
+            nbInput
+            fullWidth
+            id="project_name"
+            placeholder="Project Name"
+          />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="project_manager" class="label">Project Manager</label>
+          <input
+            type="text"
+            nbInput
+            fullWidth
+            id="project_manager"
+            placeholder="Project Manager"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="start_date" class="label">Start Date</label>
+          <input
+            type="date"
+            nbInput
+            fullWidth
+            id="start_date"
+            placeholder="start_date"
+          />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="end_date" class="label">End Date</label>
+          <input
+            type="date"
+            nbInput
+            fullWidth
+            id="end_date"
+            placeholder="End Date"
+          />
+        </div>
+      </div>
+    </div>
+    <button type="submit" nbButton>Update</button>
+  </nb-card-body>
+</nb-card>
+</div>
+
+<div class="col-sm-4">
+<ngx-budget-chart [chartValue]="solarValue"></ngx-budget-chart>
+</div>
+
+</div>
